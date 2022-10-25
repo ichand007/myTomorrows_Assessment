@@ -30,6 +30,7 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Weather_App app is running!');
+    console.log('#compiled',compiled);
+    expect(compiled.querySelector('mat-toolbar')?.textContent).toContain('myTomorrows Weather App');
   });
 });
